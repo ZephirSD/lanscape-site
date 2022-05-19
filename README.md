@@ -1,2 +1,2 @@
-# Lanscape Website (Personal Porject)
+# Lanscape Website (Personal Project)
 ## with React JS 
