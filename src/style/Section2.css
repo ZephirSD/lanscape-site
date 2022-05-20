@@ -1,0 +1,33 @@
+section.section2 {
+    background-color: var(--background3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+h1.titre-about {
+    position: absolute;
+    margin: 0;
+    color: var(--white);
+    font-family: var(--montserrat-font);
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-left: var(--left-titre);
+    top: 0;
+    left: 0;
+    padding-top: var(--top-titre);
+}
+
+div.div-para{
+    width: 45%;
+}
+
+p.para-about{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    color: var(--white);
+}

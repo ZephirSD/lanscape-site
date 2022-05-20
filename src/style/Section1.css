@@ -1,0 +1,21 @@
+section.section1{
+    background-image: url(../../public/image/5330558.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div.div-flex{
+    width: var(--full-width);
+    height: var(--full-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+h1.titre-lanscape{
+    color: var(--blue-pacifico);
+    font-family: var(--pacifico-font);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
