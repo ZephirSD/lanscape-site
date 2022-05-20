@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import AOS from "aos";
+import Scrollbar from 'smooth-scrollbar';
+import { useEffect } from "react";
+import Section1 from "./composants/Section1";
+import Section2 from "./composants/Section2";
+import Section3 from "./composants/Section3";
+import './style/style.scss';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    useEffect(() => {
+      AOS.init();
+      AOS.refresh();
+      Scrollbar.initAll();
+    }),
+    (
+      <>
+        <Section1/>
+        <Section2/>
+        <Section3/>
+      </>
+    )
   );
 }
 
