@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --background1 : #267E84;
+    --background2 : #27666A;
+    --background3 : #318B8C;
+    --full-width: 100%;
+    --full-height: 100vh;
+    --blue-pacifico: #4D79F3;
+    --pacifico-font: 'Pacifico', cursive;
+    --montserrat-font: 'Montserrat', sans-serif;
+    --white: white;
+    --left-titre: 10vw;
+    --top-titre: 5vh;
+}
+
+section{
+    width: var(--full-width);
+    height: var(--full-height);
+}
+
+@import url(Section1.css);
+@import url(Section2.css);
+@import url(Section3.css);
