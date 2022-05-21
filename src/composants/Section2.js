@@ -2,7 +2,7 @@ function Section2() {
   return (
     <>
       <section className="section2">
-        <h1 className="titre-about">About</h1>
+        <h1 className="titre-about" data-aos="fade-right">About</h1>
         <div className="div-para" data-aos="zoom-in">
           <p className="para-about">
             For a number of reasons, the capability of the internal policy

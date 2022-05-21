@@ -9,7 +9,7 @@ function Section3() {
     return ( 
         <>
             <section className="section3">
-                <h1 className="titre-about">Services</h1>
+                <h1 className="titre-about" data-aos="fade-right">Services</h1>
                 <div className='slider-box'>
                 <Swiper
                     pagination={true} 
