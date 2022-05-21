@@ -1,5 +1,6 @@
 import AOS from "aos";
-import Scrollbar from 'smooth-scrollbar';
+import "aos/dist/aos.css";
+// import Scrollbar from 'smooth-scrollbar';
 import { useEffect } from "react";
 import Section1 from "./composants/Section1";
 import Section2 from "./composants/Section2";
@@ -11,7 +12,7 @@ function App() {
     useEffect(() => {
       AOS.init();
       AOS.refresh();
-      Scrollbar.initAll();
+      // Scrollbar.initAll();
     }),
     (
       <>
