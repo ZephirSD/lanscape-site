@@ -5,6 +5,8 @@
     --background1 : #267E84;
     --background2 : #27666A;
     --background3 : #318B8C;
+    --color-thumb-scroll: #0d4950;
+    --color-thumb-scroll-hover: #002327;
     --full-width: 100%;
     --full-height: 100vh;
     --demi-width: 50%;
@@ -16,6 +18,26 @@
     --left-titre: 10vw;
     --top-titre: 5vh;
     --margin-top-bottom-form: 25px;
+    --border-radius-scroll: 15px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-thumb-scroll);
+    border-radius: var(--border-radius-scroll);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--color-thumb-scroll-hover);
 }
 
 section{
