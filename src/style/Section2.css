@@ -21,6 +21,21 @@ h1.titre-about {
     padding-top: var(--top-titre);
 }
 
+div.background-colline{
+    position: absolute;
+    width: var(--full-width);
+    height: var(--full-height);
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+img.image-coline{
+    object-fit: cover;
+    width: var(--full-width);
+    position: absolute;
+    bottom: -20px;
+}
+
 div.div-para{
     width: 45%;
 }
