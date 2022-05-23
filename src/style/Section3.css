@@ -23,3 +23,12 @@ div.slider-box{
     background-size: cover;
     background-position: center;
 }
+
+@media screen and (max-width: 720px)
+{
+    div.slider-box
+    {
+        width: var(--width-90);
+        height: 35vh
+    }
+}

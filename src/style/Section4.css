@@ -77,3 +77,23 @@ div.block-button button{
     border: none;
     cursor: pointer;
 }
+
+@media screen and (max-width: 720px)
+{
+    div.block-contact
+    {
+        width: var(--width-90);
+    }
+    div.block-form label
+    {
+        font-size: 14px;
+    }
+    p.para-check
+    {
+        font-size: 12px;
+    }
+    div.block-button button
+    {
+        font-size: 14px;
+    }
+}

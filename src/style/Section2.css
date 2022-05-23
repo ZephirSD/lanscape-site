@@ -31,3 +31,23 @@ p.para-about{
     text-align: justify;
     color: var(--white);
 }
+
+
+@media screen and (max-width: 720px)
+{
+    h1.titre-about
+    {
+        font-size: 28px;
+        position: relative;
+        padding-left: unset;
+        margin-bottom: var(--top-titre);
+    }
+    div.div-para
+    {
+        width: 75%;
+    }
+    p.para-about
+    {
+        font-size: 14px;
+    }
+}
