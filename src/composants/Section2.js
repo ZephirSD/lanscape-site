@@ -1,7 +1,11 @@
+import coline from "../assets/Colline1.png";
 function Section2() {
   return (
     <>
       <section className="section2">
+        <div className="background-colline">
+          <img src={coline} alt="visuel" className="image-coline"/>
+        </div>
         <h1 className="titre-about" data-aos="fade-right">About</h1>
         <div className="div-para" data-aos="zoom-in">
           <p className="para-about">
