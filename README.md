@@ -1,5 +1,9 @@
 # Lanscape Website (Personal Project)
 ## with React JS 
-
+<style>
+    h4.description{
+        text-align: center;
+    }
+</style>   
 <img src="public/image/visuel_site.png" alt="visuel"/>
-<p style="text-align: center">Aperçu du site</p>
+<h4 class="description">Aperçu du site</h4>
