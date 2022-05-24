@@ -1,7 +1,9 @@
 section.section1{
-    background-image: url(../../public/image/5330558.jpg);
-    background-size: cover;
-    background-position: center;
+    background-color: var(--background3);
+    overflow: hidden;
+    /* background-image: url(../../public/image/5330558.jpg); */
+    /* background-size: cover; */
+    /* background-position: center; */
 }
 
 div.div-flex{
