@@ -1,0 +1,11 @@
+Model Information:
+* title:	Peaceful mountain village
+* source:	https://sketchfab.com/3d-models/peaceful-mountain-village-d2d34e3fb0ef46f088b4b12a994a3a87
+* author:	vertigocrayon (https://sketchfab.com/vertigocrayon)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Peaceful mountain village" (https://sketchfab.com/3d-models/peaceful-mountain-village-d2d34e3fb0ef46f088b4b12a994a3a87) by vertigocrayon (https://sketchfab.com/vertigocrayon) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
