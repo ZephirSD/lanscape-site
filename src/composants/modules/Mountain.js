@@ -6,35 +6,54 @@ source: https://sketchfab.com/3d-models/peaceful-mountain-village-d2d34e3fb0ef46
 title: Peaceful mountain village
 */
 
-import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import React, { useEffect, useRef, useState } from 'react';
+import { useGLTF } from '@react-three/drei';
+import url from '../../assets/model3D/peaceful_mountain_village/mountain.gltf';
+
 
 export default function Model({ ...props }) {
-  const group = useRef()
-  const { nodes, materials } = useGLTF('/mountain.gltf')
+  const group = useRef();
+  const { nodes, materials } = useGLTF(url);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setScrollPosition(position);
+  };  
   return (
+    useEffect(() =>{
+      window.addEventListener('scroll',handleScroll)
+      // console.log(scrollPosition);
+    }),
     <group ref={group} {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]} scale={0.03}>
-        <group rotation={[Math.PI / 2, 0, 0]}>
+      <group rotation={[-Math.PI / 2, 0, 0]} scale={0.04}>
+        <group rotation={[90, 34, -0]} position={[0, 5, (-20 + (scrollPosition * 0.05))]}>
           <group position={[0, -0.04, 0]}>
             <group rotation={[-Math.PI / 2, 0, 0]}>
-              <mesh geometry={nodes.SM_Mounain_Cloud_0.geometry} material={materials.Cloud} />
+              <mesh
+                geometry={nodes.SM_Mounain_Cloud_0.geometry}
+                material={materials.Cloud}
+              />
             </group>
           </group>
           <group position={[0, -0.04, 0]}>
             <group rotation={[-Math.PI / 2, 0, 0]}>
-              <mesh geometry={nodes.SM_Clouds_2_0.geometry} material={materials.material} />
+              <mesh
+                geometry={nodes.SM_Clouds_2_0.geometry}
+                material={materials.material}
+              />
             </group>
           </group>
           <group position={[0, -0.04, 0]}>
             <group rotation={[-Math.PI / 2, 0, 0]}>
-              <mesh geometry={nodes.SM_Houses_1_0.geometry} material={materials.material_2} />
+              <mesh
+                geometry={nodes.SM_Houses_1_0.geometry}
+                material={materials.material_2}
+              />
             </group>
           </group>
         </group>
       </group>
     </group>
-  )
+  );
 }
-
-useGLTF.preload('/mountain.gltf')
+useGLTF.preload(url)
