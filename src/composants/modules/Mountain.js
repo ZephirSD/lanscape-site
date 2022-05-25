@@ -15,14 +15,20 @@ export default function Model({ ...props }) {
   const group = useRef();
   const { nodes, materials } = useGLTF(url);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [mouseX, setMouseX] = useState(0);
+  const [mouseY, setMouseY] = useState(0);
   const handleScroll = () => {
     const position = window.scrollY;
     setScrollPosition(position);
-  };  
+  };
   return (
     useEffect(() =>{
-      window.addEventListener('scroll',handleScroll)
-      // console.log(scrollPosition);
+      window.addEventListener('scroll',handleScroll);
+      const mouseMoveCursor = (e) =>{
+        setMouseX(e.pageX);
+        setMouseY(e.pageY);
+      }
+      window.addEventListener('mousemove', mouseMoveCursor);
     }),
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.04}>
@@ -35,7 +41,7 @@ export default function Model({ ...props }) {
               />
             </group>
           </group>
-          <group position={[0, -0.04, 0]}>
+          <group position={[0, (-0.04 + (mouseY * 0.05)), (0 + (mouseX * 0.05))]}>
             <group rotation={[-Math.PI / 2, 0, 0]}>
               <mesh
                 geometry={nodes.SM_Clouds_2_0.geometry}
