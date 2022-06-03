@@ -1,0 +1,24 @@
+section.loader-section{
+    background-color: var(--background4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.circle-loader{
+    border: 7px solid var(--blue-pacifico);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3.ecrito-loader{
+    font-family: var(--pacifico-font);
+    font-size: 3.5rem;
+    letter-spacing: 3.7px;
+    color: var(--blue-pacifico);
+}
