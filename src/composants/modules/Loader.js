@@ -2,7 +2,7 @@ import { Html, useProgress } from "@react-three/drei";
 
 function Loader() {
   const { progress } = useProgress();
-  console.log(progress);
+//   console.log(progress);
   return (
     <>
       <Html fullscreen>
