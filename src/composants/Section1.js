@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import React from "react";
 import Model from "./modules/Mountain";
 import { Html } from "@react-three/drei";
+import Loader from "./modules/Loader";
 
 function Section1() {
   return (
@@ -10,7 +11,7 @@ function Section1() {
       <section className="section1 data-scrollbar">
         <Canvas>
           <ambientLight />
-          <Suspense fallback={null}>
+          <Suspense fallback={<Loader/>}>
             <Html  fullscreen>
               <div className="div-flex">
                 <h1 className="titre-lanscape">lanscape</h1>
