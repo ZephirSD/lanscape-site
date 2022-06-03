@@ -5,6 +5,7 @@
     --background1 : #267E84;
     --background2 : #27666A;
     --background3 : #318B8C;
+    --background4 : #D9FCF5;
     --color-thumb-scroll: #0d4950;
     --color-thumb-scroll-hover: #002327;
     --full-width: 100%;
@@ -45,6 +46,7 @@ section{
     height: var(--full-height);
 }
 
+@import url(Loader.css);
 @import url(Section1.css);
 @import url(Section2.css);
 @import url(Section3.css);
